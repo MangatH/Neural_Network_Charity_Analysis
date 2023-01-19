@@ -84,7 +84,8 @@ The accuracy plunged to **47%**, after changing the activation function of input
 * The initial neural network model gave the accuracy of 69%. 
 * In attempts to increase the model performance, various measures were taken such as dropping more columns, adding more layers, reducing number of epochs. 
 * The attempts to optimize the models were successful, as the third attempt was able to raise the accuracy to **71%**. However, the accuracy score was still not up to the target performance. 
-* Using a larger dataset and adding more hidden layers accordingly can certainly help to improve the model performance. 
+* Using a larger dataset and adding more hidden layers accordingly can certainly help to improve the model performance.
+* Random forest classifier is another great choice, as they are faster and helps to avoid overfitting as well.
 * Another way of optimization can be by using keras tuner, as by running the model with it and dropping fewer columns, the accuracy increased to **76%**, as shown below.
 
 <img width="914" alt="Screen Shot 2023-01-19 at 12 39 01 PM" src="https://user-images.githubusercontent.com/111387025/213377982-bf1c766a-2d37-4d9f-bd95-e09d53e0c2a5.png">
