@@ -28,19 +28,19 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
 ### Data Preprocessing
 
 #### What variable(s) are considered the target(s) for your model?
-The target variable for the model is 'IS_SUCCESSFUL—Was the money used effectively'.
+The target variable for the model is 'IS_SUCCESSFUL'.
 
 #### What variable(s) are considered to be the features for your model?
 The feature variable for the model are:
-* APPLICATION_TYPE—Alphabet Soup application type
-* AFFILIATION—Affiliated sector of industry
-* CLASSIFICATION—Government organization classification
-* USE_CASE—Use case for funding
-* ORGANIZATION—Organization type
-* STATUS—Active status
-* INCOME_AMT—Income classification
-* SPECIAL_CONSIDERATIONS—Special consideration for application
-* ASK_AMT—Funding amount requested
+* APPLICATION_TYPE
+* AFFILIATION
+* CLASSIFICATION
+* USE_CASE
+* ORGANIZATION
+* STATUS
+* INCOME_AMT
+* SPECIAL_CONSIDERATIONS
+* ASK_AMT
 
 #### What variable(s) are neither targets nor features, and should be removed from the input data?
 The variable 'EIN' and 'NAME' are removed from the dataset. Thus, these are neither the targets nor features.
@@ -56,7 +56,8 @@ My neural network model had 2 hidden layers. The first hidden layer had 80 neuro
 #### Were you able to achieve the target model performance?
 The accuracy of my model was 69% which was lower than the target performance of 75%.
 
-<img width="623" alt="Screen Shot 2023-01-18 at 11 50 34 PM" src="https://user-images.githubusercontent.com/111387025/213262880-7f567753-b877-46f6-bce7-3a2a2dbdcd73.png">
+<img width="791" alt="Screen Shot 2023-01-19 at 12 45 54 PM" src="https://user-images.githubusercontent.com/111387025/213379415-59228057-0bcf-41cf-a638-695f006091c5.png">
+
 
 #### What steps did you take to try and increase model performance?
 #### Attempt 1: Dropping more columns:
