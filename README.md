@@ -48,37 +48,39 @@ The variable 'EIN' and 'NAME' are removed from the dataset. Thus, these are neit
 
 ### Compiling, Training, and Evaluating the Model
 #### How many neurons, layers, and activation functions did you select for your neural network model, and why?
-My neural network model had 2 hidden layers. The first hidden layer had 50 neurons and the second layer had 30 neurons. The activation function selected for input layers was 'relu' and for the output layer was 'sigmoid'. The reason for selecting 'relu' for the input layer is that the model trained with it converges quickly and take much lesser time as compared to other activation functions. For the Output layer, it is good to have 'sigmoid' activation function, as the range of output given by it is 0 and 1, which is best for our model here.
+My neural network model had 2 hidden layers. The first hidden layer had 80 neurons and the second layer had 30 neurons. The activation function selected for input layers was 'relu' and for the output layer was 'sigmoid'. The reason for selecting 'relu' for the input layer is that the model trained with it converges quickly and take much lesser time as compared to other activation functions. For the Output layer, it is good to have 'sigmoid' activation function, as the range of output given by it is 0 and 1, which is best for our model here.
 
 <img width="962" alt="Screen Shot 2023-01-18 at 11 47 34 PM" src="https://user-images.githubusercontent.com/111387025/213262310-507e541e-7dad-4951-876f-3bb4ff5d16cd.png">
 
 
 #### Were you able to achieve the target model performance?
-The accuracy of my model was 61% which was far behind the target performance of 75%.
+The accuracy of my model was 69% which was lower than the target performance of 75%.
 
 <img width="623" alt="Screen Shot 2023-01-18 at 11 50 34 PM" src="https://user-images.githubusercontent.com/111387025/213262880-7f567753-b877-46f6-bce7-3a2a2dbdcd73.png">
 
-####What steps did you take to try and increase model performance?
+#### What steps did you take to try and increase model performance?
 #### Attempt 1: Dropping more columns:
-* By dropping additional 2 columns in the data set - 'SPECIAL_CONSIDERATIONS','USE_CASE', the accuracy increased to **67%**. Thus, the model performance showed an improvement.
+* By dropping additional 2 columns in the data set - 'SPECIAL_CONSIDERATIONS','USE_CASE', the accuracy remained **69%**. Thus, the model performance showed an improvement.
 
-<img width="767" alt="Screen Shot 2023-01-18 at 11 52 06 PM" src="https://user-images.githubusercontent.com/111387025/213263163-486d52d5-1907-4dd8-bd77-f1ec5bd863f2.png">
+<img width="699" alt="Screen Shot 2023-01-19 at 12 00 13 PM" src="https://user-images.githubusercontent.com/111387025/213371705-1f1e10bd-11c0-4699-ba30-e6e991ce2a18.png">
 
-#### ATTEMPT 2: Adding more hidden layers and hidden nodes for each layer.
-In the second attempt, one additional hidden layer was added and 100 neurons for first hidden layer, 50 for second and 30 for the third layer. The accuracy dropped to **53%**.
+#### Attempt 2: Adding more hidden layers and hidden nodes for each layer.
+In the second attempt, one additional hidden layer was added and 100 neurons for first hidden layer, 50 for second and 30 for the third layer. The accuracy dropped to **61%**.
 
-<img width="704" alt="Screen Shot 2023-01-18 at 11 58 12 PM" src="https://user-images.githubusercontent.com/111387025/213264604-e1769f52-b0db-4cf2-9a68-82ab53351490.png">
+<img width="699" alt="Screen Shot 2023-01-19 at 12 02 36 PM" src="https://user-images.githubusercontent.com/111387025/213372097-e2c8528f-3d24-44c7-a9ba-806eb5fb1bdc.png">
 
 #### Attempt 3: Reducing the number of epochs to the training regimen.
-In the third attempt, the number of epochs were reduced to 50. It turned out to be best out of the three attempts and increased the accuracy to **69%**.
+In the third attempt, the number of epochs were reduced to 50. It turned out to be best out of the three attempts and increased the accuracy to **71%**.
 
-<img width="677" alt="Screen Shot 2023-01-19 at 12 02 08 AM" src="https://user-images.githubusercontent.com/111387025/213265278-609955c4-b05a-4e32-b80f-fd7386db4233.png">
-
+<img width="706" alt="Screen Shot 2023-01-19 at 12 04 02 PM" src="https://user-images.githubusercontent.com/111387025/213372290-b1f2d316-5144-47e4-9ef4-a927cc86f041.png">
 
 ## Summary: 
-* The initial neural network model gave the accuracy of 61%. 
-* In attempts to increase the model performance, various measures were taken such as dropping more columns, adding more layers, reducing number of epochs. * The attempts to optimize the models were successful as the final attempt was able to raise the accuracy to **69%**. However, the accuracy score was still   not up to the target performance. 
+* The initial neural network model gave the accuracy of 69%. 
+* In attempts to increase the model performance, various measures were taken such as dropping more columns, adding more layers, reducing number of epochs. 
+* The attempts to optimize the models were successful as the final attempt was able to raise the accuracy to **71%**. However, the accuracy score was still not up to the target performance. 
 * Using a larger dataset and adding more hidden layers accordingly can certainly help to improve the model performance. 
 * Another way of optimization can be by using keras tuner, as by running the model with it and dropping few columns, the accuracy increased to **76%**, as shown below.
+
+<img width="914" alt="Screen Shot 2023-01-19 at 12 39 01 PM" src="https://user-images.githubusercontent.com/111387025/213377982-bf1c766a-2d37-4d9f-bd95-e09d53e0c2a5.png">
 
 <img width="741" alt="Screen Shot 2023-01-19 at 10 18 55 AM" src="https://user-images.githubusercontent.com/111387025/213357903-d62f567b-fc7f-44af-b96d-939b7dcffb82.png">
