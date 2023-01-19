@@ -71,16 +71,21 @@ In the second attempt, one additional hidden layer was added and 100 neurons for
 <img width="699" alt="Screen Shot 2023-01-19 at 12 02 36 PM" src="https://user-images.githubusercontent.com/111387025/213372097-e2c8528f-3d24-44c7-a9ba-806eb5fb1bdc.png">
 
 #### Attempt 3: Reducing the number of epochs to the training regimen.
-In the third attempt, the number of epochs were reduced to 50. It turned out to be best out of the three attempts and increased the accuracy to **71%**.
+In the third attempt, the number of epochs were reduced to 50. It turned out to be best out of all the attempts and increased the accuracy to **71%**.
 
 <img width="706" alt="Screen Shot 2023-01-19 at 12 04 02 PM" src="https://user-images.githubusercontent.com/111387025/213372290-b1f2d316-5144-47e4-9ef4-a927cc86f041.png">
+
+#### Attempt 4: Changing the acivation function for hidden layers and reducing number of epochs.
+The accuracy plunged to **47%**, after changing the activation function of input layers from 'relu' to 'tanh'.
+
+<img width="767" alt="Screen Shot 2023-01-19 at 1 03 40 PM" src="https://user-images.githubusercontent.com/111387025/213382506-4f2302d4-68e4-466d-9528-280589fa636f.png">
 
 ## Summary: 
 * The initial neural network model gave the accuracy of 69%. 
 * In attempts to increase the model performance, various measures were taken such as dropping more columns, adding more layers, reducing number of epochs. 
-* The attempts to optimize the models were successful as the final attempt was able to raise the accuracy to **71%**. However, the accuracy score was still not up to the target performance. 
+* The attempts to optimize the models were successful, as the third attempt was able to raise the accuracy to **71%**. However, the accuracy score was still not up to the target performance. 
 * Using a larger dataset and adding more hidden layers accordingly can certainly help to improve the model performance. 
-* Another way of optimization can be by using keras tuner, as by running the model with it and dropping few columns, the accuracy increased to **76%**, as shown below.
+* Another way of optimization can be by using keras tuner, as by running the model with it and dropping fewer columns, the accuracy increased to **76%**, as shown below.
 
 <img width="914" alt="Screen Shot 2023-01-19 at 12 39 01 PM" src="https://user-images.githubusercontent.com/111387025/213377982-bf1c766a-2d37-4d9f-bd95-e09d53e0c2a5.png">
 
